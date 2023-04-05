@@ -5,7 +5,6 @@
 --hoover-color: #404BBF;
 --primary-bakground-color: #fff;
 --secondary-background-color: #F4F4FD;
-
 }
 
 body{
@@ -16,6 +15,27 @@ body{
     font-size: 16px;
     line-height: 1.5;
 }
+
+/* reset strart */
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+botton{
+    cursor: pointer
+}
+
 
 .list{
     list-style: none;
@@ -46,12 +66,39 @@ body{
 }
 
 /* site-nav */
+.container{ 
+    width: 1158px;
+    margin-left: auto ;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.site-nav{
+    display: flex;
+    margin-left: 76px;
+}
+
+.nav-item:not(:last-child){
+    margin-right: 40px;
+}
 
  .nav-link {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     color: var(--title-text-colour);
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
  }
  .nav-link:hover,
  .nav-link:focus {
@@ -60,7 +107,19 @@ line-height: 1.5;
  .address{
     font-style: normal
  }
+
+.address-list{
+    display: flex;
+    margin-left: 332px;
+
+}
+
+.address-item + .address-item{
+    margin-left: 40px;
+}
+
  .address-link {
+    display: block;
     color: var(--primary-text-colour);
     font-size: 16px;
     line-height: 1.5;
@@ -75,11 +134,11 @@ line-height: 1.5;
     color: var(--title-text-colour);
     font-size: 36px;
     line-height: 1.11;
-/* identical to box height, or 111% */
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 
-text-align: center;
-letter-spacing: 0.02em;
-text-transform: capitalize;
+
  }
 
  /* button */
@@ -93,6 +152,14 @@ text-transform: capitalize;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+
+    
+    padding: 16px 32px;
+    width: 169px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+
  }
 .button-service:hover,
 .button-service:focus{
@@ -107,14 +174,27 @@ background-color: var(--hoover-color);
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 188px;
+    padding-bottom: 292px;
     
  }
 
  
 
  /* features section */
- 
+ .feature-list{
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 120px;
+ }
+
+ .feature-items:not(:last-child){
+    margin-right: 24px;
+ }
 .features-items-headline{
     color: var(--title-text-colour);
     font-weight: 500;
@@ -124,14 +204,32 @@ background-color: var(--hoover-color);
 }
 .features-items-text{
     color: var(--primary-text-colour);
+    width: 264px;
 }
 
 /* What are we doing section */
-
+.doing-list{
+    display: flex;
+    margin-top: 72px;
+    margin-bottom: 120px;
+}
 
 /* out team */
+.team-list{
+    display: flex;
+}
+.team-items:not(:last-child){
+    margin-right: 24px;
+}
+
+
 .section-team{
     background-color: var(--secondary-background-color);
+}
+.team-content{
+    width: 232px;
+    margin: 32px 16px;
+    text-align: center;
 }
 .team-items-headline{
     color: var(--title-text-colour);
@@ -144,10 +242,11 @@ background-color: var(--hoover-color);
     color: var(--primary-text-colour);
     
 }
-.team-list{
+.team-items{
     background-color: var(--primary-bakground-color)}
 
 /* footer */
+
 .footer-logo{
     color: var(--accent-colour);
     font-family: "Raleway", sans-serif;
@@ -160,6 +259,7 @@ background-color: var(--hoover-color);
 }
 .footer-logo-studio{
     color: var(--secondary-background-color);
+    
 }
 .footer{
     background-color: #2E2F42;
@@ -180,7 +280,10 @@ background-color: var(--hoover-color);
   | Portfolio
   |============================
 */
+.portfolio-list-button{
+    display: flex;
 
+}
 .portfolio-buttons{
     background-color: var(--secondary-background-color);
     color: #4D5AE5;
@@ -200,7 +303,12 @@ background-color: var(--hoover-color);
     color: var(--white-color);
 }
 
-
+.portfolio-list-works{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
 
 .portfolio-title{
     font-weight: 500;
