@@ -5,6 +5,7 @@
 --hoover-color: #404BBF;
 --primary-bakground-color: #fff;
 --secondary-background-color: #F4F4FD;
+--portfolio-images-gap: 24px
 }
 
 body{
@@ -36,6 +37,10 @@ botton{
     cursor: pointer
 }
 
+img{
+    display: block;
+    width: 100%;
+}
 
 .list{
     list-style: none;
@@ -280,6 +285,7 @@ background-color: var(--hoover-color);
   | Portfolio
   |============================
 */
+
 .portfolio-list-button{
     display: flex;
 
@@ -304,18 +310,36 @@ background-color: var(--hoover-color);
 }
 
 .portfolio-list-works{
+    padding: 0;
+    margin: 0;
+
     display: flex;
     flex-wrap: wrap;
-    row-gap: 48px;
-    column-gap: 24px;
+
+    margin-left: calc( -1 * var(--portfolio-images-gap));
+    margin-top: calc(-1 * var(--portfolio-images-gap));
+    margin-top: 72px;
+    margin-bottom: 120px;
+    
 }
+
+.portfolio-list-works > .items{
+    flex-basis: calc(100% / 3 - 24px);
+    margin-left: var(--portfolio-images-gap);
+    margin-top: var(--portfolio-images-gap);
+}
+
+.cart-thumb{
+border: 1px solid #E7E9FC;
+}
+
 
 .portfolio-title{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--title-text-colour)
+    color: var(--title-text-colour);
 }
 
 .portfolio-text{
@@ -323,4 +347,10 @@ background-color: var(--hoover-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-colour);
+    margin-top: 8px;
+}
+
+.cart-content{
+padding: 0px 16px;
+margin: 32px 0;
 }
