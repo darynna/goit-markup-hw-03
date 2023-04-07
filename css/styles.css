@@ -97,8 +97,8 @@ img{
 
  .nav-link {
     display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     color: var(--title-text-colour);
     font-weight: 500;
@@ -148,6 +148,9 @@ img{
 
  /* button */
  .button-service{
+    display: flex;
+    margin: 0 auto;
+
     background-color: var(--accent-colour);
     color: var(--primary-bakground-color);
     font-family: "Roboto", sans-serif;
@@ -160,10 +163,9 @@ img{
 
     
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
+    height: 56px;
     border-radius: 4px;
-    margin-left: auto;
-    margin-right: auto;
 
  }
 .button-service:hover,
@@ -220,8 +222,15 @@ background-color: var(--hoover-color);
 }
 
 /* out team */
+
+.team-title{
+    padding-top: 120px;
+    padding-bottom: 72px;
+}
+
 .team-list{
     display: flex;
+    padding-bottom: 120px;
 }
 .team-items:not(:last-child){
     margin-right: 24px;
@@ -252,6 +261,11 @@ background-color: var(--hoover-color);
 
 /* footer */
 
+.footer-flex{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .footer-logo{
     color: var(--accent-colour);
     font-family: "Raleway", sans-serif;
@@ -271,6 +285,8 @@ background-color: var(--hoover-color);
 }
 .footer-text{
     color: var(--secondary-background-color);
+    width: 264px;
+    padding-top: 16px;
 }
 
 
@@ -288,6 +304,14 @@ background-color: var(--hoover-color);
 
 .portfolio-list-button{
     display: flex;
+    min-width: 586px;
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top: 96px;
+    padding-bottom: 72px;
+    
 
 }
 .portfolio-buttons{
@@ -295,12 +319,21 @@ background-color: var(--hoover-color);
     color: #4D5AE5;
     font-family: "Roboto", sans-serif;
     border-color: transparent;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    cursor: pointer
+    cursor: pointer;
+    display: flex;
+    padding: 12px 24px;
+    
 
+}
+
+.portfolio-items-button:not(:last-child){
+    margin-right: 24px;
 }
 
 .portfolio-buttons:hover,
