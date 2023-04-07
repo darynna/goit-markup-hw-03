@@ -209,9 +209,6 @@ padding: 120px 0
  }
 
 
- .feature-items:not(:last-child){
-    margin-right: 24px;
- }
 .features-items-headline{
     color: var(--title-text-colour);
     font-weight: 500;
@@ -372,18 +369,10 @@ padding: 120px 0
 
     display: flex;
     flex-wrap: wrap;
-
-    margin-left: calc( -1 * var(--portfolio-images-gap));
-    margin-top: calc(-1 * var(--portfolio-images-gap));
-    margin-top: 72px;
-    margin-bottom: 120px;
-    
-}
-
-.portfolio-list-works{
     column-gap: 24px;
     row-gap: 48px;
 }
+
 .portfolio-items{
     border: 1px solid #E7E9FC;
     border-top: none;
