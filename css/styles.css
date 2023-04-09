@@ -322,7 +322,7 @@ padding: 120px 0
   |============================
 */
 .portfolio-page{
-    padding: 96px 120px
+    padding: 96px 0 120px
 }
 .portfolio-list-button{
     display: flex;
